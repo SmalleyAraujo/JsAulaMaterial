@@ -13,15 +13,15 @@ function entraDiv(){
     divTexto.style.backgroundColor = "yellow";    
 }
 
-function validar(){
-    var texto = document.querySelector('#texto').value;
+function contadorCaracteres(){
+    var contador = document.getElementById("texto").value.length;
     
-    if (texto.length === 3 ){
-       divTexto.style.backgroundColor = "red"
+    if (contador <= 3 ){
+        divTexto.style.backgroundColor = "green";
        
     }
     else{
-        window.alert("Email ou senha incorretos! Insira as informações novamente")
+        divTexto.style.backgroundColor = "red";
     }
 
         
