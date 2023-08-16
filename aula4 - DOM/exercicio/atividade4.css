@@ -10,6 +10,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* 100vh só funciona no height */
 
