@@ -78,6 +78,15 @@ th , td{
     background-color: blueviolet;   
 }
 
+#resultado{
+    width: 50%;
+    height: 150px;
+    color: black;
+    background-color: antiquewhite;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Fim do main */
 

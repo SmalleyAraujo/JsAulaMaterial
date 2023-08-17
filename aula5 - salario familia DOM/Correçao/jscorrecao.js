@@ -2,6 +2,7 @@ const empregado = document.getElementById("empregado");
 const filho = document.getElementById("filho");
 const salario = document.querySelector("#salario");
 const btnCarcular = document.querySelector("#calcular");
+const resposta = document.getElementById("resultado");
 
 btnCarcular.addEventListener('click', calcular );
 
@@ -28,7 +29,9 @@ function calcular(){
                         familia = 0;
                     }
                 }
-                window.alert(`${empregado.value}, o salario familia é de : ${familia}`);
+                resposta.style.display ="flex";
+                resposta.innerText =`${empregado.value}, o salario familia é de : ${familia}`;
+                // window.alert(`${empregado.value}, o salario familia é de : ${familia}`);
             }
 
         }
