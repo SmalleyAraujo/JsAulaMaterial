@@ -48,7 +48,7 @@ cliente1.conta = "1";
 cliente1.agencia = "101";
 cliente1.saldo = "0";
 
-console.log(cliente1);
+console.log(cliente1);  
 
 var cliente2 = new Cliente();
 cliente2.nome = "Marcos";
