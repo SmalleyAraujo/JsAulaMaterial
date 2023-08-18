@@ -27,14 +27,14 @@ class Carro{
         this.velocidadeMaxima = velocidadeMaxima;
         this.velocidadeAtual = velocidadeAtual;
         this.acelerar = function(velocidade){
-            if(this.velocidadeMaxima >= velocidade){
-                this.velocidadeMaxima -= velocidade;
-                return  ` velocidade igual há ${velocidade} velocidade máxima ${this.velocidadeMaxima}`;
+            if(velocidade <= this.velocidadeMaxima){
+                this.velocidadeMaxima -= velocidade;                 
+                this.velocidadeAtual = velocidade;               
+                return  ` Velocidade atual igual há ${velocidade} km/h, faltam ${this.velocidadeMaxima} km/h até atingir a velocidade máxima! `;
             }
             else{
-                return "Velocidade acima da velocidade máxima!"
-            }
-            
+                return "Atenção!!! você ultrapassou a velocidade máxima permitida!!!"
+            }            
 
         }
 
@@ -44,6 +44,6 @@ class Carro{
 
 }
 
-var carro1 = new Carro("VW","GOL", "1990", "Branco", 160, 100);
+var carro1 = new Carro("VW","GOL", "1990", "Branco", 160, 0);
 
 
