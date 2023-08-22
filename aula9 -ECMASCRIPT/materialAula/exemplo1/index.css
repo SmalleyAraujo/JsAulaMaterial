@@ -1,0 +1,15 @@
+.assunto{
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(50,154,154);
+}
+
+.codigoDoAssunto{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: white;
+}
