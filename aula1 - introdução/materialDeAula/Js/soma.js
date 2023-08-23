@@ -12,4 +12,9 @@ const soma = numero1 + numero2;
 //  ** POTENCIA
 //  % RESTO DA DIVISÃO
 
+//OPERADORES LÓGICOS
+// &	(and)
+// ||	(or)
+// !	(not)
+
 window.alert(`A soma dos dois números é de ${soma}`);
