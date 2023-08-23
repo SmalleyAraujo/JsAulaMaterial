@@ -2,7 +2,6 @@
 // window.alert("oi");
 
 
-
 const primeiraPromise = new Promise((resolve,reject) =>{
     const nome = "ADM";    
     if(nome === "ADM"){

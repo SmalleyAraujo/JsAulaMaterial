@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+
+}
+
+nav{
+ display: flex;
+
+}
+.controlNav{
+    width: 90%;
+    display: flex;
+    justify-content:flex-start;
+
+}
+
+.buttonNav{
+    width: 10%;
+    display: flex;
+    justify-content:center;
+}
