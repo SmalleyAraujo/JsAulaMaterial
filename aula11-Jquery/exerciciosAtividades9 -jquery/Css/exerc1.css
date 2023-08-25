@@ -36,8 +36,7 @@ input{
 }
 
 
-#resultado{
-    display: none;
+#resultadoDiv{
     width: 100%;
     height: 90px;
     margin: 10px auto;
