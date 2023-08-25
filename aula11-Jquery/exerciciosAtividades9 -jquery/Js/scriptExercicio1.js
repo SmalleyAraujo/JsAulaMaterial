@@ -6,35 +6,71 @@ const btnSubtracao = document.querySelector("#btnSubtracao");
 const btnMultiplicacao = document.querySelector("#btnMultiplicacao");
 const btnDivisao = document.querySelector("#btnDivisao");
 
+
 //Eventos = addEventLintener 
 btnSoma.addEventListener('click', calcular); 
 btnSubtracao.addEventListener('click', calcular);  
 btnMultiplicacao.addEventListener('click', calcular);  
 btnDivisao.addEventListener('click', calcular);  
+  
 
 
 // calculos das funções 
 
-function calcular(){
+function calcular(x){
+     let inputNumero = document.querySelector("#numero").value;
 
-   switch{
-    case 1:
-        
-   }
-
-    var contador = 0; 
-    while (contador < 10){    
-        contador++
-        let resultado = btnSoma * contador;    
-        console.log(`${contador} x  = ${resultado}`);
-        
-        
-    }
-
-    }
+     if(x == btnSoma ){
+          opcao = btnSoma;
+     }else{
+          if(x == btnSubtracao){
+               opcao = btnSubtracao;  
+          }else{
+               return `Nada`;
+          }
+     }
+     
+     switch (opcao) {
+          case btnSoma:
+               var contador = 0; 
+               let total = 0;
+               while (contador < 10){                       
+                   contador++
+                   total = parseInt(inputNumero) + parseInt(contador);
+                   console.log(`${inputNumero} + ${contador} = ${total}`) 
+                   resultado.style.display ="flex";              
+                   resultado.innerHTML = `${inputNumero} + ${contador} = ${total}`;          
+                            
+               }
+               
+               break;
+     
+          default:
+               break;
+     }
     
+     
+
+
+
+         
+         
+     
 
 }
+
+
+
+
+   
+    
+   
+
+    
+
+    
+    
+
 
 
 
