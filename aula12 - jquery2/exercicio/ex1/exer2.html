@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/exer2.css">
+    
+</head>
+<body>
+    <div id="pagina" class="temaLight">
+        <header id="header" class="temaLight">
+            <nav>
+                <div class="controlNav">
+                    <div>
+                        <h1>Notpage</h1>
+                    </div>
+                    <div>
+                        <img src="icons/brush_FILL0_wght400_GRAD0_opsz48.svg" alt="" width="50">
+                    </div> 
+                    <div class="buttonNav">
+
+                        <button class="temaLight" id="mudaTema" type="button"><img src="icons/routine_FILL0_wght400_GRAD0_opsz48.svg" alt="" width="30"></button>
+                    </div> 
+                                      
+                </div>
+                                     
+
+            </nav>
+        </header>
+        <main>
+            
+            <div id="textoMain">
+                <h1 id="paragrafoLorem">Contador <img src="icons/sentiment_very_satisfied_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50"></h1>
+                
+                <p id="paragrafoNumero">Numero de palavras: <span id="numeroPalavras"> 0</span></p>
+                <p id="paragrafoNumero">Numero de caracteres: <span id="numeroCaracteres"> 0</span></p>
+                <div id="poupUp"> 
+                    <div >
+                        <button class="btnButton" id="acesso">Acesso</button>
+                    </div>
+                    
+                    <div id="form">
+                        <form action="#" method="post">
+                            <h1>PoupUp</h1>
+                            
+                            <label for="user">User</label>
+                            <input type="text" id="user" placeholder="Digite seu User">
+        
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" placeholder="Digite sua senha">
+        
+                        </form>
+                    </div>
+                </div>        
+            </div>
+            
+            <textarea  id="textoArea" class="temaLight" cols="30" rows="10"></textarea>
+            
+            <div id="configInputs">
+                <input type="text" id="localizarPalavra" placeholder="localizar palavras">
+                <input type="text" id="substituirPalavra" placeholder="substituir palavras">
+
+            </div>
+            <div>
+                <button type="button" class="buttonControl" id="trocar">Trocar uma palavra</button>
+                <button type="button" class="buttonControl" id="trocarTodos" >Trocar todas as palavras</button>
+                
+            </div>  
+                   
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="Js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="Js/scriptEx2.js"></script>
+    <script src="Js/mudaTema.js"></script>
+    <script src="Js/contaCaracteries.js"></script>
+    <script src="Js/scriptPopUp.js"></script>
+</body>
+</html>
