@@ -1,6 +1,6 @@
 // 2) Fazer um site de escrever textos onde possa implementar as funções de replace e replace all
 //SELETORES
-const textoDigitado = document.querySelector("#textoDigitado")
+const textoDigitado = document.querySelector("#textoArea")
 const localizarPalavra = document.querySelector("#localizarPalavra")
 const substituirPalavra = document.querySelector("#substituirPalavra")
 const trocarBtn = document.querySelector("#trocar")
@@ -14,7 +14,7 @@ trocarTodosBtn.addEventListener('click', trocarTodosTexto)
 // functions
 
 function trocarTexto(){
-    let textoDigitadoValor = textoDigitado.value;
+    let textoDigitadoValor = textoArea.value;
     let localizarPalavraValor = localizarPalavra.value;
     let substituirPalavraValor = substituirPalavra.value;
 
